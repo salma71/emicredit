@@ -1,11 +1,11 @@
 {
-  "name": "emicredit",
+  "name": "server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "engines": {
-    "node ": "10.9.0",
-    "npm": "6.2.0"
+    "node": "8.1.1",
+    "npm": "5.0.3"
   },
   "scripts": {
     "start": "node index.js",
@@ -14,25 +14,17 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
-  "repository": {
-    "type": "git",
-    "url": "emicredit"
-  },
-  "author": "Salma Elshahawy",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "concurrently": "^4.0.1",
-    "cookie-session": "^2.0.0-beta.3",
-    "express": "^4.16.3",
-    "mongoose": "^5.2.12",
-    "nodemon": "^1.18.4",
-    "passport": "^0.4.0",
+    "body-parser": "^1.17.2",
+    "concurrently": "^3.5.0",
+    "cookie-session": "^2.0.0-beta.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.11.1",
+    "nodemon": "^1.11.0",
+    "passport": "^0.3.2",
     "passport-google-oauth20": "^1.0.0",
-    "serverless": "^1.30.3",
-    "stripe": "^6.10.0"
-  },
-  "devDependencies": {
-    "ws": "3.3.2"
+    "stripe": "^4.23.1"
   }
 }
