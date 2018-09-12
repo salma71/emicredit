@@ -7,6 +7,8 @@ const keys = require('./config/keys')
 require('./models/user')
 require('./services/passport')
 
+console.log(keys.mongoURI, keys.mongoUsername, keys.mongoPassword)
+
 mongoose.connect(keys.mongoURI, {
   user: keys.mongoUsername,
   pass: keys.mongoPassword
