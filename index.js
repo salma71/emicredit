@@ -7,7 +7,10 @@ const keys = require('./config/keys')
 require('./models/user')
 require('./services/passport')
 
-mongoose.connect(keys.mongoURI)
+mongoose.connect(keys.mongoURI, {
+  user: keys.mongoUsername,
+  pass: keys.mongoPassword
+})
 
 const app = express()
 
